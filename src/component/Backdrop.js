@@ -1,6 +1,6 @@
-function Backdrop(){
+function Backdrop(prop){
     return(
-        <div className="backdrop"/>
+        <div className="backdrop" onClick={prop.onCancel}/>
     )
 }
 
