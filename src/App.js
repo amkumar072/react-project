@@ -1,6 +1,6 @@
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-import AllMeetup from "./component/AllMeetup";
+import AllMeetup from "./pages/AllMeetup";
 import FavouriteMeetup from "./component/FavouriteMeetup";
 import NewMeetup from "./component/NewMeetup";
 
