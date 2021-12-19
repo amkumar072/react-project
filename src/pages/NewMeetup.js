@@ -1,5 +1,22 @@
+import NewMeetupForm from "../component/meetups/NewMeetupForm";
+
 function NewMeetup() {
-    return <div>NewMeetup Meetup</div>;
+  function AddMeetupHandler(meetup) {
+    console.log(" add", meetup);
+
+    fetch(
+      "https://madhankumar-projects-default-rtdb.firebaseio.com/meetup.json",
+      {
+        method: "POST",
+        body: JSON.stringify(meetup),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
   }
-  
-  export default NewMeetup;
+
+  return <NewMeetupForm onAddMeetup={AddMeetupHandler} />;
+}
+
+export default NewMeetup;
