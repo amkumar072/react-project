@@ -12,13 +12,11 @@ function App() {
         <Route path="/" exact>
           <AllMeetup />
         </Route>
-
-        <Route path="/favourite" >
-          <FavouriteMeetup />
-        </Route>
-
-        <Route path="/new-meetup" >
+        <Route path="/new-meetup">
           <NewMeetup />
+        </Route>
+        <Route path="/favourite">
+          <FavouriteMeetup />
         </Route>
       </Switch>
     </Layout>

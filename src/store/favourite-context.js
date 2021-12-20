@@ -24,9 +24,7 @@ export function FavouriteContextProvider(props) {
   }
 
   function itemIsFavouriteHandler(meetupId) {
-    setUserFavourite((preFavourites) => {
-      return preFavourites.filter((meetup) => meetup.id === meetupId);
-    });
+    return userFavourite.some((meetup) => meetup.id === meetupId);
   }
 
   const context = {

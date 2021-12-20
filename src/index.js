@@ -6,12 +6,12 @@ import { BrowserRouter } from "react-router-dom";
 import { FavouriteContextProvider } from "./store/favourite-context";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <FavouriteContextProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </FavouriteContextProvider>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  <FavouriteContextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </FavouriteContextProvider>,
+  // </React.StrictMode>,
   document.getElementById("root")
 );
